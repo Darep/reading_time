@@ -1,4 +1,6 @@
 module ReadingTime
+
+  # Simple wrapper class for a small timespan
   class Time
     attr_accessor :minutes_total, :seconds_total, :minutes, :seconds
 

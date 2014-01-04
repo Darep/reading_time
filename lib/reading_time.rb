@@ -9,14 +9,15 @@ module ReadingTime
   ACCURACY_IN_SECONDS = 5
 
   def self.parse(text, opts = {})
+    avg_words_per_min = opts[:words_per_min] || AVG_WORDS_PER_MIN
+
     if opts[:format] and not opts[:format].is_a? String
       raise '"format" is not a String'
     end
 
-    avg_words_per_min = opts[:words_per_min] || AVG_WORDS_PER_MIN
-    minutes_total = self.count_words(text).to_f / avg_words_per_min
+    minutes = self.count_words(text).to_f / avg_words_per_min
 
-    Time.new(minutes_total)
+    Time.new(minutes)
   end
 
   private
