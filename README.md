@@ -4,7 +4,7 @@ TODO: Write a gem description
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your Gemfile:
 
     gem 'reading_time'
 
@@ -22,8 +22,16 @@ TODO: Write usage instructions here
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/reading_time/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
+Contributions are most welcome! And well-tested and documented contributions are
+more welcome than others ;)
+
+1. [Fork the repository][fork]
+2. [Create a branch][branch] (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+5. [Create a pull request][pr]
+
+[fork]: http://help.github.com/fork-a-repo/
+[branch]: http://learn.github.com/p/branching.html
+[pr]: http://help.github.com/send-pull-requests/
+
