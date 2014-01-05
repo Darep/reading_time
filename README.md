@@ -1,6 +1,6 @@
 # ReadingTime
 
-TODO: Write a gem description
+Ruby gem for estimating the reading time of text marked in HTML or just plain text.
 
 ## Installation
 
@@ -19,6 +19,12 @@ Or install it yourself as:
 ## Usage
 
 TODO: Write usage instructions here
+
+## Todo
+
+- Parse reading time from Markdown marked text
+- I18n
+- Custom `to_s` formatting for `ReadingTime::Time`
 
 ## Contributing
 
