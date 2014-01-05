@@ -18,7 +18,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+**TODO: Write usage instructions here!**
+
+```ruby
+> require 'reading_time'
+> time = ReadingTime.parse('Lorem ipsum dolor sit amet, consectetur.')
+> time.seconds
+=> 1
+> time.to_s
+=> "1 second"
+```
 
 ## Todo
 
