@@ -8,6 +8,10 @@ module ReadingTime
   AVG_WORDS_PER_MIN = 200
   ACCURACY_IN_SECONDS = 5
 
+  def self.word_count(text)
+    words(text).count
+  end
+
   def self.parse(text, opts = {})
     avg_words_per_min = opts[:words_per_min] || AVG_WORDS_PER_MIN
 
@@ -15,16 +19,12 @@ module ReadingTime
       raise '"format" is not a String'
     end
 
-    minutes = self.count_words(text).to_f / avg_words_per_min
+    minutes = self.word_count(text).to_f / avg_words_per_min
 
     Time.new(minutes)
   end
 
   private
-
-    def self.count_words(text)
-      self.plain_text(text).split.count
-    end
 
     def self.plain_text(text)
       # Remove all the HTML
@@ -34,6 +34,10 @@ module ReadingTime
     def self.trim(minutes)
       # TODO: implement this
       accuracy = opts[:accuracy] || ACCURACY_IN_SECONDS
+    end
+
+    def self.words(Text)
+      self.plain_text(text).split
     end
 
 end
