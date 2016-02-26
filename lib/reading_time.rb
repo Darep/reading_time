@@ -36,7 +36,7 @@ module ReadingTime
       accuracy = opts[:accuracy] || ACCURACY_IN_SECONDS
     end
 
-    def self.words(Text)
+    def self.words(text)
       self.plain_text(text).split
     end
 
